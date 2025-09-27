@@ -1,0 +1,65 @@
+{% extends "index.html" %}
+{% load static %}
+{% block main_section %}
+
+
+<section class="bg-gray-50 dark:bg-gray-900 py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <!-- Heading -->
+    <h2 class="text-3xl sm:text-4xl font-bold text-amber-500 mb-6">
+      About Royal Mobile Store
+    </h2>
+    <p class="text-gray-700 dark:text-gray-300 text-lg max-w-3xl mx-auto mb-12">
+      At <span class="font-semibold text-blue-900 dark:text-white">Royal Mobile Store</span>, 
+      we are dedicated to bringing you the latest smartphones, accessories, 
+      and gadgets at the most competitive prices. With a passion for technology 
+      and customer satisfaction, we make your shopping experience smooth, secure, 
+      and enjoyable.
+    </p>
+  </div>
+
+  <!-- Grid Content -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto items-center">
+    
+    <!-- Left Image -->
+    <div>
+      <img src="{% static 'uploads/logo.png' %}" 
+           alt="Royal Mobile Store" 
+           class="rounded-lg shadow-lg border-4 border-amber-500 mx-auto w-80">
+    </div>
+
+    <!-- Right Content -->
+    <div class="text-left">
+      <h3 class="text-2xl font-semibold text-blue-900 dark:text-white mb-4">Who We Are</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-6">
+        Founded with the vision of delivering quality and trust, 
+        Royal Mobile Store has quickly grown into one of the most 
+        reliable mobile e-commerce platforms. We aim to provide 
+        the best deals, authentic products, and excellent 
+        after-sales support for our valued customers.
+      </p>
+
+      <h3 class="text-2xl font-semibold text-blue-900 dark:text-white mb-4">Our Mission</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-6">
+        Our mission is simple: to make technology accessible for 
+        everyone. Whether you’re looking for the latest flagship 
+        smartphones or affordable accessories, we are here to 
+        serve you with honesty, speed, and reliability.
+      </p>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 gap-6 text-center mt-8">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+          <h4 class="text-3xl font-bold text-amber-500">10K+</h4>
+          <p class="text-gray-600 dark:text-gray-300">Happy Customers</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+          <h4 class="text-3xl font-bold text-amber-500">100%</h4>
+          <p class="text-gray-600 dark:text-gray-300">Trusted Products</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

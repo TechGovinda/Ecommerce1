@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+
+
+{% block main_section %}
+
+ <!-- include carousel -->
+{% include 'product/carousel.html' %}
+   
+
+     <!-- loop through products -->
+{% for p in product %}
+        <h1>{{p.product_name}}</h1>
+         <img src="{{ p.image }}" alt="{{ p.product_name }}" style="max-width:300px; height:auto;">
+        {% endfor %}
+
+{% endblock %}
